@@ -22,7 +22,7 @@ fun(y = 3, x = 20)
 def fun1(x, y, z = 3):
 	return x + y + z
 
-print(fun1(10, 20, 30))
+print(fun1(10, 20, 30)) # will override default value
 print(fun1(10, 20)) # here it will take default value of z
 
 print(fun1(z = 5, x = 3, y = 2))
@@ -39,6 +39,8 @@ print(fun1(z = 5, x = 3, y = 2))
 4. variable length argument
 
 -> we pass a special argument prepended by a *
+
+* will say from now all the args will be variable args
 """
 
 def sum_of_nums(x, *nums):
